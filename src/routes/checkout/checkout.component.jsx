@@ -45,8 +45,8 @@ const Checkout = () => {
       {cartItems.map((cartItem) => (
         <CheckoutItem key={cartItem.id} cartItem={cartItem} />
       ))}
-      <span className="total">Total: ${cartTotalPrice}</span>
-      <PaymentCheckout props={cartTotalPrice}/>
+      <span className="total">Total: Rp{cartTotalPrice}.000</span>
+      <PaymentCheckout props={cartTotalPrice} />
     </CheckoutContainer>
   );
 };
