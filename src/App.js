@@ -15,7 +15,8 @@ import Authentication from "./routes/authentication/authentication.component";
 import Shop from "./routes/shop/shop.component";
 import Checkout from "./routes/checkout/checkout.component";
 import PaymentStatus from "./compoments/payment-status/payment-status.component";
-
+import UploadFeed from "./routes/feeds-upload/UploadFeed";
+import Feed from "./routes/feeds-view/feeds";
 // import { setCurrentUser } from "./store/user/user.action";
 import { checkUserSession } from "./store/user/user.action";
 
@@ -42,7 +43,8 @@ const App = () => {
         <Route path="checkout" element={<Checkout />} />
         <Route path="auth" element={<Authentication />} />
         <Route path="payment-status" element={<PaymentStatus />} />
-
+        <Route path="upload-feed" element={<UploadFeed />} />
+        <Route path="feeds" element={<Feed />} />
       </Route>
     </Routes>
   );

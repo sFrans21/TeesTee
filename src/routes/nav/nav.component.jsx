@@ -33,9 +33,9 @@ const Nav = () => {
   const cartItems = useSelector(selectCartItems);
 
   const signoutHandler = () => {
-    signOutUser().then(()=>{
+    signOutUser().then(() => {
       dispatch(checkUserSession());
-    })
+    });
   };
 
   return (
@@ -46,7 +46,9 @@ const Nav = () => {
         </LogoContainer>
         <NavLinks>
           {currentUser && <span>Hello, {currentUser.email}</span>}
-          <NavLink to="/shop">SHOP</NavLink>
+          {/* <NavLink to="/shop">SHOP</NavLink> */}
+          <NavLink to="/upload-feed">UPLOAD</NavLink>
+          <NavLink to="/feeds">FEEDS</NavLink>
           {currentUser ? (
             <div>
               <span
