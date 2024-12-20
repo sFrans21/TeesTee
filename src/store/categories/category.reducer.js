@@ -1,5 +1,5 @@
 import { CATEGORIES_ACTION_TYPES } from "./category.types";
-
+import SHOP_DATA from "../../../src/shop-data";
 const INITIAL_STATE = {
   categories: [],
   isLoading: false,

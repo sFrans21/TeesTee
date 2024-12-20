@@ -16,8 +16,6 @@ const PaymentForm = ({ props }) => {
   const [errorMessage, setErrorMessage] = useState();
   const [loading, setLoading] = useState(false);
 
-  //Stripeは金額が通貨の最小単位で指定されると想定されるため、
-  //10eurを請求する場合は amountを1000とする必要がある
   const amount = props * 100;
 
   const handleError = (error) => {

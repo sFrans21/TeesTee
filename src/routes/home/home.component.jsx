@@ -1,4 +1,3 @@
-
 import Directory from "../../compoments/directory/directory.component";
 
 const Home = () => {
@@ -29,13 +28,11 @@ const Home = () => {
   //     "imageUrl": "https://i.ibb.co/R70vBrQ/men.png"
   //   }
   // ]
-  
 
   return (
     <div>
       {/* <Directory categories={categories} />; */}
-      <Directory  />;
-
+      <Directory />;
     </div>
   );
 };
