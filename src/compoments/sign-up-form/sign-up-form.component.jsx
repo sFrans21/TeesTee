@@ -73,7 +73,7 @@ const SignUpForm = () => {
         />
 
         <FormInput
-          label="passowrd"
+          label="password"
           inputOptions={{
             type: "password",
             required: true,
