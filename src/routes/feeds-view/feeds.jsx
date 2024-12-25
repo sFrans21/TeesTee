@@ -10,6 +10,8 @@ import {
   DetailContainer,
   DetailImage,
   BackButton,
+  TitleContainer,
+  Title,
 } from "./feeds.style";
 
 function Feed() {
@@ -48,6 +50,9 @@ function Feed() {
 
   return (
     <Container>
+      <TitleContainer>
+        <Title>Our Design Collection</Title>
+      </TitleContainer>
       {selectedProduct ? (
         <DetailContainer>
           <DetailImage

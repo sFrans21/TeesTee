@@ -4,6 +4,17 @@ export const Container = styled.div`
   padding: 20px;
 `;
 
+export const TitleContainer = styled.div`
+  text-align: center;
+  margin-bottom: 40px;
+`;
+
+export const Title = styled.h1`
+  font-size: 32px;
+  font-weight: bold;
+  color: #333;
+`;
+
 export const GridContainer = styled.div`
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
